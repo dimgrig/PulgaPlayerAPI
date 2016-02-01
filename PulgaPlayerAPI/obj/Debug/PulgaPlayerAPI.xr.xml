@@ -4,8 +4,7 @@
     <RootPropertyPathName Name="NaturalDuration" />
     <RootPropertyPathName Name="TimeSpan" />
     <RootPropertyPathName Name="TotalSeconds" />
-    <RootPropertyPathName Name="Position" />
-    <RootPropertyPathName Name="TotalSecond" />
+    <RootPropertyPathName Name="Value" />
     <RootPropertyPathName Name="title" />
     <RootPropertyPathName Name="URL" />
   </Roots.PropertyPathNames>
@@ -37,6 +36,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="SelectionMode" />
       <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
@@ -62,15 +62,30 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Volume" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
+    <RootType FullName="Windows.UI.Xaml.Controls.Slider">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Maximum" />
-      <RootProperty Name="Value" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="ManipulationMode" />
       <RootProperty Name="Foreground" />
-      <RootEvent Name="ValueChanged" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="IsThumbToolTipEnabled" />
+      <RootProperty Name="StepFrequency" />
+      <RootEvent Name="ManipulationCompleted" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Tag" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="ElementName" />
@@ -79,11 +94,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Text" />
-      <RootProperty Name="Tag" />
-      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />

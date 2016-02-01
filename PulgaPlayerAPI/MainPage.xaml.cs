@@ -7,7 +7,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
-using Windows.Phone.UI.Input;
+//using Windows.Phone.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,7 +22,8 @@ using Windows.UI.Xaml.Media.Imaging;
 // The WebView Application template is documented at http://go.microsoft.com/fwlink/?LinkID=391641
 
 namespace PulgaPlayerAPI
-{
+{ 
+
     public sealed partial class MainPage : Page
     {
         // TODO: Replace with your URL here.
@@ -35,6 +36,53 @@ namespace PulgaPlayerAPI
 
             VKSDK.Initialize("5226529");
             VKSDK.Authorize(_scope, false, false);
+
+            Volume.Value = 0.25;
+            currentTime.Text = "";
+            durationTime.Text = "";
+
+            DispatcherTimer Timer = new DispatcherTimer();
+            Timer.Interval = TimeSpan.FromMilliseconds(1000); //one second  
+            Timer.Tick += Timer_Tick;             
+            Timer.Start();                  
+        }
+
+        private void Timer_Tick(object sender, object e)
+        {
+            ProgressPos.Value = Player.Position.TotalSeconds;
+
+            if (Player.CurrentState == MediaElementState.Playing)
+            {                
+                try
+                {
+                    currentTime.Text = String.Format(@"{0:hh\:mm\:ss}", Player.Position);
+                }
+                catch
+                {
+
+                }
+            }
+
+            else if (Player.CurrentState == MediaElementState.Paused)
+            {                
+                try
+                {
+                    currentTime.Text = String.Format(@"{0:hh\:mm\:ss}", Player.Position);
+                }
+                catch
+                {
+
+                }
+            }
+
+            try
+            {
+                durationTime.Text = string.Format(@"{0:hh\:mm\:ss}", Player.NaturalDuration).Remove(8);
+            }
+            catch
+            {
+
+            }
         }
 
         public string GetTrueURL(string inputstring)
@@ -71,14 +119,14 @@ namespace PulgaPlayerAPI
 
         private void imagePrev_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            int n = --audioView.SelectedIndex;
-            PlayTrack((audioView.Items[n] as VKAudio).url);
+            if (audioView.SelectedIndex > 0)
+                PlayTrack((audioView.Items[--audioView.SelectedIndex] as VKAudio).url);
         }
 
         private void imageNext_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            int n = ++audioView.SelectedIndex;
-            PlayTrack((audioView.Items[n] as VKAudio).url);
+            if (audioView.SelectedIndex < (audioView.Items.Count()-1))
+                PlayTrack((audioView.Items[++audioView.SelectedIndex] as VKAudio).url);
         }
 
         private void imagePause_Tapped(object sender, TappedRoutedEventArgs e)
@@ -86,12 +134,12 @@ namespace PulgaPlayerAPI
             if (Player.CurrentState == MediaElementState.Playing)
             {
                 Player.Pause();
-                Image_Loaded(@"Resources/Play.jpg");
+                Image_Loaded(@"Resources/Play.png");
             }
             else if (Player.CurrentState == MediaElementState.Paused)
                 {
                     Player.Play();
-                    Image_Loaded(@"Resources/Pause.jpg");
+                    Image_Loaded(@"Resources/Pause.png");
                 }
         }
 
@@ -102,10 +150,23 @@ namespace PulgaPlayerAPI
             imagePause.Source = bmp;
         }
 
-        private void ProgressPos_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        private void scrubChange(object sender, ManipulationCompletedRoutedEventArgs e)
         {
-            ;
+            if (Player.CurrentState == MediaElementState.Playing)
+            {
+                TimeSpan ts = new TimeSpan(0, 0, (int)ProgressPos.Value);
+                Player.Position = ts;
+            }
+            else if (Player.CurrentState == MediaElementState.Paused)
+            {
+                TimeSpan ts = new TimeSpan(0, 0, (int)ProgressPos.Value);
+                Player.Position = ts;
+            }
         }
+
+
+
+
 
         /*        private void Button_Tapped(object sender, TappedRoutedEventArgs e)
                 {

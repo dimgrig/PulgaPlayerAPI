@@ -16,24 +16,25 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
-            <RowDefinition Height="400"/>
-            <RowDefinition Height="8"/>
+            <RowDefinition Height="350"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <ListView
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Grid.Row="3" 
+            Grid.Row="4" 
             Grid.Column="0"
             SelectionMode="None"
         >
             <Image 
             x:Name ="imagePrev"
-            Source="Resources/Backward.jpg" 
+            Source="Resources/Backward.png" 
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Grid.Row="3" 
+            Grid.Row="4" 
             Grid.Column="0"
             Stretch = "UniformToFill"
             Width = "70"
@@ -45,16 +46,16 @@
         <ListView
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Grid.Row="3" 
+            Grid.Row="4" 
             Grid.Column="1"
             SelectionMode="None"
         >
             <Image 
             x:Name ="imagePause"
-            Source="Resources/Pause.jpg" 
+            Source="Resources/Pause.png" 
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Grid.Row="3" 
+            Grid.Row="4" 
             Grid.Column="1"
             Stretch = "UniformToFill"
             Width = "70"
@@ -66,16 +67,16 @@
         <ListView
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Grid.Row="3" 
+            Grid.Row="4" 
             Grid.Column="2"  
             SelectionMode="None"
         >
             <Image 
             x:Name ="imageNext"
-            Source="Resources/Forward.jpg" 
+            Source="Resources/Forward.png" 
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Grid.Row="3" 
+            Grid.Row="4" 
             Grid.Column="2"
             Stretch = "UniformToFill"
             Width = "70"
@@ -83,7 +84,7 @@
             Tapped="imageNext_Tapped"
         />
         </ListView>
-        
+
         <ListBox 
             x:Name ="audioView"
             HorizontalAlignment="Stretch"
@@ -121,23 +122,65 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"         
             Width = "100"
-            Height="100"           
+            Height="100"     
+            Volume ="{Binding ElementName = Volume,
+                            Path = Value,
+                            Mode = TwoWay}" 
         />
-        <ProgressBar 
+        <Slider 
             x:Name ="ProgressPos"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Bottom"         
+            Width = "380"
+            Height = "50"
+            Grid.Row="2" 
+            Grid.ColumnSpan="3"            
+            ManipulationCompleted="scrubChange"  
+            ManipulationMode="All"
+            Foreground="#FFC5492E" 
+            Maximum="{Binding ElementName = Player,
+                              Path = NaturalDuration.TimeSpan.TotalSeconds,
+                              Mode=TwoWay}" IsThumbToolTipEnabled="False"
+        />
+        <Slider 
+            x:Name ="Volume"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch"         
             Width = "380"
-            Grid.Row="2" 
+            Height = "100"
+            Grid.Row="3" 
             Grid.ColumnSpan="3" 
-            Maximum="{Binding ElementName = Player,
-                              Path = NaturalDuration.TimeSpan.TotalSeconds}"
-            Value="{Binding ElementName = Player,
-                            Path = Position.TotalSecond,
-                            Mode = TwoWay}" Foreground="#FFC859CD" ValueChanged="ProgressPos_ValueChanged"            
+            Maximum="1" 
+            Foreground="#FFC5492E"
+            StepFrequency="0.01" 
+            IsThumbToolTipEnabled="False"
         />
-
-        <Grid.Background>   
+        <TextBlock 
+            x:Name="currentTime" 
+            VerticalAlignment="Bottom"  
+            HorizontalAlignment="Left" 
+            Grid.Row="2" 
+            Grid.Column="0" 
+            TextWrapping="Wrap" 
+            Text="TextBlock"  
+            Height="15" 
+            Width="60" 
+            FontSize="14" 
+            Margin="8,0,0,60"
+        />
+        <TextBlock 
+            x:Name="durationTime" 
+            VerticalAlignment="Top"  
+            HorizontalAlignment="Right" 
+            Grid.Row="2" 
+            Grid.Column="3" 
+            TextWrapping="Wrap" 
+            Text="TextBlock"  
+            Height="15" 
+            Width="60" 
+            FontSize="14"
+        />
+        <Grid.Background>
             <ImageBrush
                 Stretch = "UniformToFill"
                 ImageSource ="Resources/BackGround.jpg"

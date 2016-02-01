@@ -1,6 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="e:\geekbrains\c# api\pulgaplayerapi\pulgaplayerapi\obj\debug\intermediatexaml\pulgaplayerapi.exe" HashGuid="7ae7e20d-63ac-5cfc-a970-661bb0fa6b96" />
-    <ReferenceAssembly PathName="d:\pulgaplayerapi-master\vk-windowsphone-sdk-master\vk-windowsphone-sdk-master\vk.windowsphone.sdk-xaml\bin\debug\vk.windowsphone.sdk-xaml.dll" HashGuid="d68b3819-8ca2-fbb1-7f59-8f20d48de073" />
+    <ReferenceAssembly PathName="d:\pulgaplayerapi\vk-windowsphone-sdk-master\vk-windowsphone-sdk-master\vk.windowsphone.sdk-xaml\bin\debug\vk.windowsphone.sdk-xaml.dll" HashGuid="d68b3819-8ca2-fbb1-7f59-8f20d48de073" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

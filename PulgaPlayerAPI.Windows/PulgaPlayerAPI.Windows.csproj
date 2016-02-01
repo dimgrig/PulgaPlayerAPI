@@ -133,6 +133,12 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vk-windowsphone-sdk-master\vk-windowsphone-sdk-master\VK.WindowsPhone.SDK-XAML\VK.WindowsPhone.SDK-XAML.csproj">
+      <Project>{a7e0fc88-a513-4981-8c2a-0106045e695b}</Project>
+      <Name>VK.WindowsPhone.SDK-XAML</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

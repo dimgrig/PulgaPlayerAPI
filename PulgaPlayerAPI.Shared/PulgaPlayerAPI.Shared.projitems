@@ -11,9 +11,14 @@
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Resources\BackGround.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Resources\Backward.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Backward.png" />
     <Content Include="$(MSBuildThisFileDirectory)Resources\Forward.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Forward.png" />
     <Content Include="$(MSBuildThisFileDirectory)Resources\Pause.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Pause.png" />
     <Content Include="$(MSBuildThisFileDirectory)Resources\Play.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Play.png" />
     <Content Include="$(MSBuildThisFileDirectory)Resources\Quit.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Quit.png" />
   </ItemGroup>
 </Project>

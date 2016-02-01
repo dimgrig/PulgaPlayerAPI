@@ -103,10 +103,15 @@
     <Content Include="Html\index.html" />
     <Content Include="Resources\BackGround.jpg" />
     <Content Include="Resources\Backward.jpg" />
+    <Content Include="Resources\Backward.png" />
     <Content Include="Resources\Forward.jpg" />
+    <Content Include="Resources\Forward.png" />
     <Content Include="Resources\Pause.jpg" />
+    <Content Include="Resources\Pause.png" />
     <Content Include="Resources\Play.jpg" />
+    <Content Include="Resources\Play.png" />
     <Content Include="Resources\Quit.jpg" />
+    <Content Include="Resources\Quit.png" />
     <Content Include="VKConfig.xml" />
   </ItemGroup>
   <ItemGroup>
