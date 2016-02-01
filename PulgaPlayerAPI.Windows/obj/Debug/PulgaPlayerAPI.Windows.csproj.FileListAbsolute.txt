@@ -1,0 +1,49 @@
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\App.g.i.cs
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\App.g.cs
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\MainPage.g.i.cs
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\MainPage.g.cs
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\XamlTypeInfo.g.cs
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\App.xaml
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\MainPage.xaml
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\App.xbf
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\MainPage.xbf
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\XamlSaveStateFile.xml
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\PulgaPlayerAPI.Windows.csprojResolveAssemblyReference.cache
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\App.xbf
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\MainPage.xbf
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\PulgaPlayerAPI.Windows.xr.xml
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\PulgaPlayerAPI.Windows.exe
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\PulgaPlayerAPI.Windows.pdb
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\resources.pri
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\AppxManifest.xml
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\PulgaPlayerAPI.Windows.build.appxrecipe
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\VK.WindowsPhone.SDK-XAML.dll
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\Newtonsoft.Json.dll
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\VK.WindowsPhone.SDK-XAML.pdb
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\VK.WindowsPhone.SDK-XAML.pri
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\bin\Debug\Newtonsoft.Json.xml
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\PulgaPlayerAPI.Windows.exe
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\PulgaPlayerAPI.Windows.pdb
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\PulgaPlayerAPI.Windows.csproj.GenerateResource.Cache
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\priconfig.xml
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\priconfig.xml.intermediate
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\layout.resfiles
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\layout.resfiles.intermediate
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\resources.resfiles
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\resources.resfiles.intermediate
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\pri.resfiles
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\pri.resfiles.intermediate
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\qualifiers.txt
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\qualifiers.txt.intermediate
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\GeekBrains\C# API\PulgaPlayerAPI\PulgaPlayerAPI.Windows\obj\Debug\ProjectArchitectures.txt
+D:\PulgaPlayerAPI-master\PulgaPlayerAPI.Windows\obj\Debug\App.g.i.cs
+D:\PulgaPlayerAPI-master\PulgaPlayerAPI.Windows\obj\Debug\App.g.cs
+D:\PulgaPlayerAPI-master\PulgaPlayerAPI.Windows\obj\Debug\MainPage.g.i.cs
+D:\PulgaPlayerAPI-master\PulgaPlayerAPI.Windows\obj\Debug\MainPage.g.cs
+D:\PulgaPlayerAPI-master\PulgaPlayerAPI.Windows\obj\Debug\XamlTypeInfo.g.cs
+D:\PulgaPlayerAPI-master\PulgaPlayerAPI.Windows\obj\Debug\App.xaml
+D:\PulgaPlayerAPI-master\PulgaPlayerAPI.Windows\obj\Debug\MainPage.xaml
+D:\PulgaPlayerAPI-master\PulgaPlayerAPI.Windows\obj\Debug\App.xbf
+D:\PulgaPlayerAPI-master\PulgaPlayerAPI.Windows\obj\Debug\MainPage.xbf
+D:\PulgaPlayerAPI-master\PulgaPlayerAPI.Windows\obj\Debug\XamlSaveStateFile.xml
